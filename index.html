@@ -3,42 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HP09 - Welcome</title>
+    <title>HP09 - モダンなWebソリューション</title>
+    <meta name="description" content="HP09は最新技術を活用したWebソリューションを提供します">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>HP09</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">ホーム</a></li>
-                <li><a href="#about">について</a></li>
-                <li><a href="#contact">お問い合わせ</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>HP09</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">ホーム</a></li>
+                    <li><a href="#services">サービス</a></li>
+                    <li><a href="#tech">技術スタック</a></li>
+                    <li><a href="#team">チーム</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+        </div>
     </header>
 
     <main>
-        <section id="home">
-            <div class="hero">
-                <h2>Welcome to HP09</h2>
-                <p>シンプルで美しいホームページへようこそ</p>
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="hero-title">モダンなWebソリューション</h2>
+                    <p class="hero-subtitle">最新技術で革新的なWebサイトを構築</p>
+                    <button class="cta-button">プロジェクトを始める</button>
+                </div>
             </div>
         </section>
 
-        <section id="about">
-            <h2>About</h2>
-            <p>このサイトはHP09プロジェクトのホームページです。</p>
+        <section id="services" class="section">
+            <div class="container">
+                <h2>サービス一覧</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Webサイト制作</h3>
+                        <p>レスポンシブでモダンなWebサイトを制作</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Webアプリケーション</h3>
+                        <p>高性能なWebアプリケーションの開発</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>UI/UXデザイン</h3>
+                        <p>ユーザー体験を重視したデザイン設計</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>お問い合わせはこちらから</p>
+        <section id="tech" class="section">
+            <div class="container">
+                <h2>技術スタック</h2>
+                <div class="tech-grid">
+                    <div class="tech-item">HTML5</div>
+                    <div class="tech-item">CSS3</div>
+                    <div class="tech-item">JavaScript</div>
+                    <div class="tech-item">React</div>
+                    <div class="tech-item">Node.js</div>
+                    <div class="tech-item">Python</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="section">
+            <div class="container">
+                <h2>チームメンバー</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <h3>田中 太郎</h3>
+                        <p>フロントエンド開発者</p>
+                    </div>
+                    <div class="team-member">
+                        <h3>佐藤 花子</h3>
+                        <p>UI/UXデザイナー</p>
+                    </div>
+                    <div class="team-member">
+                        <h3>山田 次郎</h3>
+                        <p>バックエンド開発者</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>お問い合わせ</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">お名前</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">メッセージ</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">送信</button>
+                </form>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 HP09. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2025 HP09. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
